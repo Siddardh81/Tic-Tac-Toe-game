@@ -1,0 +1,89 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #CB735C;
+}
+.container{
+    height: 70vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    gap: 1.5vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    background-color: #CBDFBD;
+    color: black;
+    font-size: 10vmin;
+    box-shadow: 0 0 1rem rgb(0,0,0,0.1);
+    border: none;
+}
+
+#reset{
+   padding: 1rem;
+   font-size: 1.25rem;
+   border-radius: 1rem;
+   border: none;   
+   background-color: #F6F4D2;
+}
+#reset:active{
+    background-color:#DEBE9B ;
+     transform: scale(0.95);
+}
+.box {
+    cursor: pointer; /* show pointer on hover */
+    transition: transform 0.1s ease, background-color 0.1s ease; /* smooth interaction */
+}
+
+.box:active {
+    background-color: #DEBE9B; /* pressed color */
+    transform: scale(0.95); /* slight shrink on click */
+}
+
+.box:focus {
+    outline: 2px solid #333; /* keyboard focus visible */
+    outline-offset: -4px;
+}
+.new-button{
+    padding: 1rem;
+   font-size: 1.25rem;
+   border-radius: 1rem;
+   border: none; 
+   background-color:#CBDFBD ;
+}
+.new-button:active{
+
+    background-color: #DEBE9B;
+    transform: scale(0.95); 
+
+}
+.msg-container{
+    height: 100vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.hide{
+   display: none;
+}
+#msg{
+
+    font-size: 5vmin;
+}
